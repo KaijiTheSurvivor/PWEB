@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Atividade12.js" defer></script>
+    <title>Atividade12</title>
+</head>
+<body>
+    <p> Base </p>
+    <br>
+    <input type="number" id="base" name="base">
+    <br>
+    <p> Altura </p>
+    <br>
+    <input type="number" id="altura" name="altura">
+    <br>
+    <button onclick= "let retangulo = new Retangulo(base.value, altura.value);
+    document.getElementById('resultado').innerHTML = 'Área do Retangulo: ' + retangulo.calcularArea();">
+         Calcular </button>
+    <p id="resultado"> Aperte o botão para calcular a área do retangulo </p>
+    <br>
+    <br>
+    <button onclick = "let conta1 = new Corrente;
+    let conta2 = new Poupanca;
+    conta1.setSaldo(1000);
+    conta2.setSaldo(2000);
+    conta1.setNomeCorrentista('João');
+    conta2.setNomeCorrentista('Maria');
+    conta1.setBanco('Banco do Brasil');
+    conta2.setBanco('Caixa Econômica');
+    conta1.setNumeroConta('12345-6');
+    conta2.setNumeroConta('65432-1');
+    conta1.setSaldoEspecial(500);
+    conta2.setJuros(0.05);
+    conta2.setDataVencimento('30/12/2024');
+
+    for (let atributo in conta1) {
+    console.log(atributo + ':'  + conta1[atributo]);
+}
+    for (let atributo in conta2) {
+    console.log(atributo + ':' + conta2[atributo]);
+    }"> Exibir Atributos </button>
+
+</body>
+</html>
