@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade13</title>
+    <script src="Atividade13.js"></script>
+</head>
+<body>
+    <p id="EstadoJanela">Janela Fechada</p>
+    <br>
+    <img id="ImagemJanela" onmouseover="document.getElementById('EstadoJanela').textContent = 'Janela Aberta';
+    document.getElementById('ImagemJanela').src = 'Aberta.png';"
+     id="Imagem" src="Fechada.webp" alt="Janela Fechada" width="200px"
+     onmouseout="document.getElementById('EstadoJanela').textContent = 'Janela Fechada';
+     document.getElementById('ImagemJanela').src = 'Fechada.webp';"
+     onclick="document.getElementById('EstadoJanela').textContent = 'Janela Quebrada';
+     document.getElementById('ImagemJanela').src = 'Quebrada.png';"
+     >
+    <br>
+    
+</body>
+</html>
